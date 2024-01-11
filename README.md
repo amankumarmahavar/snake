@@ -41,7 +41,7 @@ This is a classic Snake Game implemented using Flutter and dart. It's a simple y
   flutter run
 ```
 ## Screenshots
-
+<img scr="https://github.com/amankumarmahavar/snake/blob/main/ss/snake1.jpg"/>
 ![App Screenshot](https://github.com/amankumarmahavar/snake/blob/main/ss/snake1.jpg?raw=true)
 
 ![App Screenshot](https://github.com/amankumarmahavar/snake/blob/main/ss/snake2.jpg?raw=true )
