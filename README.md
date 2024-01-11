@@ -48,6 +48,3 @@ This is a classic Snake Game implemented using Flutter and dart. It's a simple y
 - [@amanmahavar](https://github.com/amankumarmahavar)
 
 
-## Credits 
-
-- [@londonappbrewery](https://github.com/londonappbreweryr)
