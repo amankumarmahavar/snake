@@ -1,7 +1,14 @@
-import 'package:flutter/material.dart';
-import 'snake_gui.dart';
+import 'dart:io';
 
+import 'package:flutter/material.dart';
+import 'package:snake/pages/profile_page.dart';
+import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 void main() {
+  if (Platform.isWindows || Platform.isLinux) {
+    // Initialize FFI
+    sqfliteFfiInit();
+    databaseFactory = databaseFactoryFfi;
+  }
   runApp(const Snake());
 }
 
@@ -11,10 +18,12 @@ class Snake extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        body: SnakeGUI(),
-      ),
+      theme: ThemeData(
+          scaffoldBackgroundColor: Color(0xFFE8F6EF),
+          textTheme: Theme.of(context)
+              .textTheme
+              .apply(bodyColor: Colors.black, fontFamily: 'Urbanist')),
+      home: ProfilePage(),
     );
   }
 }
